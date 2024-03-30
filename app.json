@@ -9,20 +9,21 @@
         "DEEPAK_STRING": {
             "description": "fill with the pyrogram session string from account",
             "required": true
+            "value": "BQEzUCoAbpMm-lS4CGJiBZxNN6blTDhsRM_QWr_J8skkKt0tOl_eMgzJb7-BEoTX51i98TUEtK-IPakULBMKowAtOtXjsC6njK0VfL5nI9g_lMvo8kTlLXLyl3vLlFN9E3u_gFIFIzsSee5aPAU5gpj1WwWRNodLotlL3Z9H23j2QuP7dXMZFnhOY_I0Q4Yiv6aTkO8i7GoaNOxlBECqqhluYTWVCnaMr48cNBMJfgt5243V6FPsPy2CNI-mVfQy3_NBSA_QVJAVwW10w2Sac_nTROmfKF8OkeYJHvKlXFMi0BNxUdpCR_9X3NQVexUBJO-S6WMbgzkbncJPsKCNkKpRhkiLLgAAAAGD6OwhAA"
         },
         "API_ID": {
             "description": "your Api ID from my.telegram.org/apps",
             "required": true,
-            "value": ""
+            "value": "20140074"
         },
         "API_HASH": {
             "description": "your Api Hash from my.telegram.org/apps",
             "required": false,
-            "value": ""
+            "value": "b0546302ccd9e1a505e500f0fcb88d0d"
         },
         "LOG_GROUP_ID": {
           "description": "Create a private channel. And get it's id from @missrose_bot and paste here. Value should start with -100",
-          "value": "",
+          "value": "-1002020879170",
           "required": true
         },
         "ASSISTANT_NAME": {
@@ -53,7 +54,7 @@
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
             "required": true,
-            "value": ""
+            "value": "7082967847:AAHPycMUPzWEXy9PQ7pzHORhN1OZ6yZZ3lg"
         }
 
     }
