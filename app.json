@@ -9,7 +9,7 @@
         "DEEPAK_STRING": {
             "description": "fill with the pyrogram session string from account",
             "required": true
-            "value": "BQEzUCoAbpMm-lS4CGJiBZxNN6blTDhsRM_QWr_J8skkKt0tOl_eMgzJb7-BEoTX51i98TUEtK-IPakULBMKowAtOtXjsC6njK0VfL5nI9g_lMvo8kTlLXLyl3vLlFN9E3u_gFIFIzsSee5aPAU5gpj1WwWRNodLotlL3Z9H23j2QuP7dXMZFnhOY_I0Q4Yiv6aTkO8i7GoaNOxlBECqqhluYTWVCnaMr48cNBMJfgt5243V6FPsPy2CNI-mVfQy3_NBSA_QVJAVwW10w2Sac_nTROmfKF8OkeYJHvKlXFMi0BNxUdpCR_9X3NQVexUBJO-S6WMbgzkbncJPsKCNkKpRhkiLLgAAAAGD6OwhAA"
+            
         },
         "API_ID": {
             "description": "your Api ID from my.telegram.org/apps",
