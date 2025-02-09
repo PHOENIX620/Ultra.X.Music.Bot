@@ -1,0 +1,5 @@
+call_py = PyTgCalls( 
+    bot=bot, 
+    loop=loop,
+    # other required parameters
+)
