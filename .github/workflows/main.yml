@@ -19,6 +19,10 @@ jobs:
         with:
           python-version: '3.9'  # Python version set karein
 
+      - name: Install pytgcalls
+        run: |
+          pip install --upgrade pytgcalls  # Pytgcalls ko upgrade karte hain
+
       - name: Install dependencies
         run: |
           pip install -r requirements.txt  # Dependencies ko install karte hain
