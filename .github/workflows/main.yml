@@ -21,8 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt  # Install project dependencies from requirements.txt
-          pip install pytgcalls==1.0.0  # Install the latest stable version of pytgcalls that includes required functionality
+          pip install -r requirements.txt 
 
       - name: Install ffmpeg
         run: |
