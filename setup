@@ -1,11 +1,24 @@
 #!/bin/bash
 ### Deepak Music Installer
 
-sudo apt update
-apt upgrade -y
-sudo apt install git curl python3-pip ffmpeg -y
-pip3 install -U pip
-curl -sL https://deb.nodesource.com/setup_16.x | bash -
-sudo apt-get install -y nodejs
-npm i -g npm
-pip3 install -U -r requirements.txt
+# Update system and upgrade packages
+sudo apt update && sudo apt upgrade -y
+
+# Install necessary dependencies
+sudo apt install -y git curl python3-pip ffmpeg python3-full
+
+# Upgrade pip to the latest version
+pip3 install --upgrade pip
+
+# Install Node.js (16.x)
+curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+sudo apt install -y nodejs
+
+# Ensure npm is installed
+sudo apt install -y npm
+
+# Upgrade npm to the latest version globally
+sudo npm install -g npm
+
+# Install Python dependencies from requirements.txt
+pip3 install --no-cache-dir -r requirements.txt
