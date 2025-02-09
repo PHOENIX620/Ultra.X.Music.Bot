@@ -1,39 +1,28 @@
-name: Run Music Bot
+name: Music Bot Deployment
 
 on:
   push:
     branches:
-      - main
-  workflow_dispatch:  # Manually trigger the workflow
+      - main  # Ye workflow tab run hoga jab aap main branch pe push karenge
+  workflow_dispatch:  # Manually run karne ke liye
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest  # Ye workflow Ubuntu environment mein run hoga
 
     steps:
-      # Step 1: Checkout code from the repository
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Repository ko checkout karte hain
 
-      # Step 2: Set up Python environment
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4  # Python ko setup karte hain
         with:
-          python-version: '3.9'  # Choose the Python version you want
+          python-version: '3.9'  # Python version set karein
 
-      # Step 3: Install dependencies
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements.txt  # Dependencies ko install karte hain
 
-      # Step 4: Install ffmpeg (necessary for music bot)
-      - name: Install ffmpeg
+      - name: Run the bot
         run: |
-          sudo apt-get update
-          sudo apt-get install ffmpeg
-
-      # Step 5: Run the bot
-      - name: Run Music Bot
-        run: |
-          run deepak  # Change this to the script that runs your bot
+          python3 main.py  # Bot script ko run karte hain
