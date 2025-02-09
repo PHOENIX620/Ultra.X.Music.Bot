@@ -8,11 +8,11 @@ admins = {}
 
 #:::::::::::::@OFFICIALHACKERERA
 
-API_ID = int(getenv("API_ID", ""))
+API_ID = int(getenv("API_ID", "14964504"))
 
-API_HASH = getenv("API_HASH", "")
+API_HASH = getenv("API_HASH", "7ddc2e405de3b79daa752d971f3336b8")
 
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "7576028028:AAFbSQFeStfHVdbAyLrMuMgFqh-FhFMEjcs")
 
 DEEPAK_SESSION = getenv("DEEPAK_SESSION", "")
 
