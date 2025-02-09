@@ -1,4 +1,40 @@
-git clone $REPO_URL Xyz
+#!/bin/bash
+
+# Ensure the REPO_URL environment variable is set
+if [ -z "$REPO_URL" ]; then
+    echo "Error: REPO_URL environment variable is not set."
+    exit 1
+fi
+
+# Clone the Git repository
+git clone "$REPO_URL" Xyz
+
+# Check if cloning was successful
+if [ $? -ne 0 ]; then
+    echo "Error: Git clone failed."
+    exit 1
+fi
+
+# Navigate into the repository
 cd Xyz
+
+# Upgrade pip and install Python dependencies
+pip3 install --upgrade pip
 pip3 install -U -r requirements.txt
+
+# Check if pip installation was successful
+if [ $? -ne 0 ]; then
+    echo "Error: pip install failed."
+    exit 1
+fi
+
+# Run the main Python script
 python3 main.py
+
+# Check if the Python script ran successfully
+if [ $? -ne 0 ]; then
+    echo "Error: Python script execution failed."
+    exit 1
+fi
+
+echo "Script executed successfully."
