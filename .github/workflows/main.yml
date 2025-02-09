@@ -3,29 +3,29 @@ name: Music Bot Deployment
 on:
   push:
     branches:
-      - main  # This workflow will run when you push to the main branch
-  workflow_dispatch:  # Allows you to manually trigger the workflow
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # This will run the workflow in an Ubuntu environment
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3  # Check out the repository
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v4  # Set up Python
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.9'  # Specify the Python version
+          python-version: '3.9'
 
       - name: Install pytgcalls (specific version)
         run: |
-          pip install pytgcalls==2.0.0  # Specify the compatible version of pytgcalls
+          pip install pytgcalls==2.0.0  # Add the compatible version of pytgcalls
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt  # Install all dependencies from requirements.txt
+          pip install -r requirements.txt
 
       - name: Run the bot
         run: |
