@@ -1,0 +1,39 @@
+name: Run Music Bot
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Manually trigger the workflow
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'  # Choose the Python version you want
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Step 4: Install ffmpeg (necessary for music bot)
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install ffmpeg
+
+      # Step 5: Run the bot
+      - name: Run Music Bot
+        run: |
+          python3 bot.py  # Change this to the script that runs your bot
