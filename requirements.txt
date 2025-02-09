@@ -1,4 +1,4 @@
-pytgcalls==2.0.6
+pytgcalls==2.1.0
 tgcrypto
 asyncio
 ffmpeg-python
