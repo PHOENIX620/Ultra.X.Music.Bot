@@ -36,4 +36,4 @@ jobs:
       # Step 5: Run the bot
       - name: Run Music Bot
         run: |
-          python3 bot.py  # Change this to the script that runs your bot
+          python3 main.py  # Change this to the script that runs your bot
