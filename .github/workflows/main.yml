@@ -22,7 +22,12 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt  # Install project dependencies from requirements.txt
-          pip install pytgcalls==1.0.2  # Install pytgcalls version 1.0.2 that includes `idle()`
+          pip install pytgcalls==2.1.0  # Install the latest stable version of pytgcalls that includes required functionality
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt update
+          sudo apt install ffmpeg  # Install ffmpeg which is needed for audio processing in the bot
 
       - name: Run the bot
         run: |
