@@ -1,5 +1,5 @@
 import asyncio
-from pytgcalls import idle
+from pytgcalls import PyTgCalls
 from Deepak.main import call_py, bot, tgbot, Test, Deepak
 from Deepak import __version__
 from os import getenv
