@@ -18,27 +18,27 @@ DEEPAK_SESSION = getenv("DEEPAK_SESSION", "")
 
 OWNER_ID = getenv("OWNER_ID", "2035388821")
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002369007076"))
 
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "6508157803").split()))
 
-MONGO_URL = os.environ.get("MONGO_URL", "")
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://noob43597:Kq38rKvmP7ScCBYQ@frozenbots.hf0o4fn.mongodb.net/")
 
 OWNER_NAME = getenv("OWNER_NAME", "OFFICIALHACKERERA")
 
 BOT_NAME = getenv("BOT_NAME", "Ultra X Music")
 
-ASSISTANT_NAME = getenv("ASSISTANT_NAME", "")
+ASSISTANT_NAME = getenv("ASSISTANT_NAME", "hbh")
 
-GROUP_SUPPORT = getenv("GROUP_SUPPORT", "")
+GROUP_SUPPORT = getenv("GROUP_SUPPORT", "gvv")
 
-UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "")
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "ggvv")
 
-OWNER_USERNAME = getenv("OWNER_USERNAME", "")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "raox")
 
-ALIVE_NAME = getenv("ALIVE_NAME", "")
+ALIVE_NAME = getenv("ALIVE_NAME", "bb")
 
-BOT_USERNAME = getenv("BOT_USERNAME", "")
+BOT_USERNAME = getenv("BOT_USERNAME", "gvvv")
 
 
 
