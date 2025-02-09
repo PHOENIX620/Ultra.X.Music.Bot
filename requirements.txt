@@ -25,5 +25,3 @@ speedtest-cli
 deezer-python
 spotipy
 pymongo
-requests
-dnspython
